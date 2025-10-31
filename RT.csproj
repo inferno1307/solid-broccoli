@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF5FA5C1-56CF-4906-ADA5-7AFF47276BCB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RT</RootNamespace>
+    <AssemblyName>RT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DOB_pos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DOB_pos.Designer.cs">
+      <DependentUpon>DOB_pos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DOB_rasp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DOB_rasp.Designer.cs">
+      <DependentUpon>DOB_rasp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DOB_sot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DOB_sot.Designer.cs">
+      <DependentUpon>DOB_sot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPolz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPolz.Designer.cs">
+      <DependentUpon>FormPolz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="poisk1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="poisk1.Designer.cs">
+      <DependentUpon>poisk1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="poisk2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="poisk2.Designer.cs">
+      <DependentUpon>poisk2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="poisk3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="poisk3.Designer.cs">
+      <DependentUpon>poisk3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pos.Designer.cs">
+      <DependentUpon>pos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pos1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pos1.Designer.cs">
+      <DependentUpon>pos1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rasp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rasp.Designer.cs">
+      <DependentUpon>rasp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rasp1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rasp1.Designer.cs">
+      <DependentUpon>rasp1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reg.Designer.cs">
+      <DependentUpon>Reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rtDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rtDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sot.Designer.cs">
+      <DependentUpon>sot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sot1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sot1.Designer.cs">
+      <DependentUpon>sot1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsersDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vxod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vxod.Designer.cs">
+      <DependentUpon>Vxod.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DOB_pos.resx">
+      <DependentUpon>DOB_pos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOB_rasp.resx">
+      <DependentUpon>DOB_rasp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOB_sot.resx">
+      <DependentUpon>DOB_sot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPolz.resx">
+      <DependentUpon>FormPolz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="poisk1.resx">
+      <DependentUpon>poisk1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="poisk2.resx">
+      <DependentUpon>poisk2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="poisk3.resx">
+      <DependentUpon>poisk3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pos.resx">
+      <DependentUpon>pos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pos1.resx">
+      <DependentUpon>pos1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="rasp.resx">
+      <DependentUpon>rasp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rasp1.resx">
+      <DependentUpon>rasp1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reg.resx">
+      <DependentUpon>Reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sot.resx">
+      <DependentUpon>sot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sot1.resx">
+      <DependentUpon>sot1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vxod.resx">
+      <DependentUpon>Vxod.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="rtDataSet.xsc">
+      <DependentUpon>rtDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="rtDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rtDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="rtDataSet.xss">
+      <DependentUpon>rtDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UsersDBDataSet.xsc">
+      <DependentUpon>UsersDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UsersDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UsersDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UsersDBDataSet.xss">
+      <DependentUpon>UsersDBDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\174943414.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="rt.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UsersDB.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
